@@ -2,9 +2,9 @@ public class Product
 {
     private String name;
     private String itemPrice;
-    private String totItems;
+    private int totItems;
     
-    public Product(String n, String i, String t)
+    public Product(String n, String i, int t)
     {
         name = n;
         itemPrice = i;
@@ -20,5 +20,22 @@ public class Product
         name = n;
     }
     
-    public String itemPrice
+    public String getItemPrice()
+    {
+        return itemPrice;
+    }
+    public void setItemPrice(String i)
+    {
+        itemPrice = i;
+    }
+    
+    public int getTotItems()
+    {
+        return totItems;
+    }
+    public void setTotItems(int t)
+    {
+        totItems = t;
+    }
+    
 }

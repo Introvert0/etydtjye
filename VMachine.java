@@ -1,31 +1,41 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+public class VMachine 
+{
 
-public class VMachine {
-
-    private List<Product> productList = new ArrayList<>();
+    private List<String> productList = new ArrayList<>();
     private float profit = 0f;
 
-    public VMachine() {}
+    public VMachine() 
+    {
+        
+    }
 
-    public void addProduct(Product product) {
-        if (!this.productList.contains(product)) {
+    public void addProduct(String product) 
+    {
+        if (!this.productList.contains(product)) 
+        {
             this.productList.add(product);
         }
     }
 
     // used in instructions 3b, 4b
-    public void printSortedStock() {
+    public void printSortedStock() 
+    {
         /*
             This method is public, to be called on the tester
 
             Used to print the products sorted by their stock,
             then give the user the option to restock the product
          */
+        
+        
     }
 
     // to be used inside printSortedStock()
-    private void increaseStock(int id, int quantity) {
+    private void increaseStock(int id, int quantity) 
+    {
         /*
             This method is private, will be used within the class
 
@@ -35,7 +45,8 @@ public class VMachine {
     }
 
     // used in instructions 3a and 4a
-    public void registerSale() {
+    public void registerSale() 
+    {
         /*
             This method is public, to be called on the tester.
 
@@ -46,20 +57,25 @@ public class VMachine {
 
             Print the profit then set it back to 0
          */
+        
+        
     }
 
     // to be used inside registerSale()
-    private float soldProduct(int id, int quantity) {
+    private float soldProduct(int id, int quantity) 
+    {
         /*
             This method is private, will be used within the class.
 
             It takes the id of the product from the array, and the
             quantity to reduce from the stock, returns the sales.
          */
+        return profit;
     }
 
     // to be used inside registerSale()
-    private void printProducts() {
+    private void printProducts() 
+    {
         /*
             This method is private, will be used within the class.
 
@@ -68,11 +84,13 @@ public class VMachine {
          */
     }
 
-    public List<Product> getProductList() {
+    public List<String> getProductList() 
+    {
         return productList;
     }
 
-    public void setProductList(List<Product> productList) {
+    public void setProductList(List<String> productList) 
+    {
         this.productList = productList;
     }
 }

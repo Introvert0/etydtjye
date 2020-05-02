@@ -1,13 +1,13 @@
 public class Product
 {
     private String name;
-    private String itemPrice;
+    private double cost;
     private int totItems;
     
-    public Product(String n, String i, int t)
+    public Product(String n, double c, int t)
     {
         name = n;
-        itemPrice = i;
+        cost = c;
         totItems = t;
     }
     
@@ -20,13 +20,13 @@ public class Product
         name = n;
     }
     
-    public String getItemPrice()
+    public double getCost()
     {
-        return itemPrice;
+        return cost;
     }
-    public void setItemPrice(String i)
+    public void setCost(double c)
     {
-        itemPrice = i;
+        cost = c;
     }
     
     public int getTotItems()
@@ -38,4 +38,10 @@ public class Product
         totItems = t;
     }
     
+    public String toString()
+    {
+        return String.format("%-38s", name) + "\t" + 
+               String.format("%-38s", "$" + cost) + "\t" +
+        String.format("%-38s", totItems + " left in the vending machine");
+    }
 }

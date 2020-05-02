@@ -1,17 +1,19 @@
 #BlueJ class context
 comment0.target=Product
-comment1.params=n\ i\ t
-comment1.target=Product(java.lang.String,\ java.lang.String,\ int)
+comment1.params=n\ c\ t
+comment1.target=Product(java.lang.String,\ double,\ int)
 comment2.params=
 comment2.target=java.lang.String\ getName()
 comment3.params=n
 comment3.target=void\ setName(java.lang.String)
 comment4.params=
-comment4.target=java.lang.String\ getItemPrice()
-comment5.params=i
-comment5.target=void\ setItemPrice(java.lang.String)
+comment4.target=double\ getCost()
+comment5.params=c
+comment5.target=void\ setCost(double)
 comment6.params=
 comment6.target=int\ getTotItems()
 comment7.params=t
 comment7.target=void\ setTotItems(int)
-numComments=8
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

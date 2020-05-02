@@ -1,5 +1,21 @@
 #BlueJ class context
 comment0.target=VMachine
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment1.params=
+comment1.target=VMachine()
+comment2.params=product
+comment2.target=void\ addProduct(java.lang.String)
+comment3.params=
+comment3.target=void\ printSortedStock()
+comment4.params=id\ quantity
+comment4.target=void\ increaseStock(int,\ int)
+comment5.params=
+comment5.target=void\ registerSale()
+comment6.params=id\ quantity
+comment6.target=float\ soldProduct(int,\ int)
+comment7.params=
+comment7.target=void\ printProducts()
+comment8.params=
+comment8.target=java.util.List\ getProductList()
+comment9.params=productList
+comment9.target=void\ setProductList(java.util.List)
+numComments=10
